@@ -17,6 +17,7 @@ func main() {
 	flag.IntVar(&n, "n", 256, "Security Parameter $n$")
 	flag.IntVar(&m, "m", 512, "Security Parameter $m$")
 	flag.IntVar(&lambda, "keylen", 64, "Length of Derived Key")
+	flag.Parse()
 	fmt.Println("Waiting for client to connect...")
 
 	// listen on all interfaces
